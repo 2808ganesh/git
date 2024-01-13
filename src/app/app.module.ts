@@ -8,13 +8,15 @@ import { HeaderComponent } from './templates/header/header.component';
 import { AboutComponent } from './templates/about/about.component';
 import { ContactComponent } from './templates/contact/contact.component';
 import { LoginComponent } from './includes/login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppLayoutComponent } from './includes/app-layout/app-layout.component';
 import { EmiCalculatorComponent } from './templates/emi-calculator/emi-calculator.component';
 import { AppHeaderComponent } from './includes/app-header/app-header.component';
 import { AppMenuComponent } from './includes/app-menu/app-menu.component';
 import { RegistrationComponent } from './templates/registration/registration.component';
 import { HomepageComponent } from './templates/homepage/homepage.component';
+import { FooterComponent } from './templates/footer/footer.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -29,12 +31,16 @@ import { HomepageComponent } from './templates/homepage/homepage.component';
     AppHeaderComponent,
     AppMenuComponent,
     RegistrationComponent,
-    HomepageComponent
+    HomepageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

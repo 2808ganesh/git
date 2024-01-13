@@ -13,7 +13,7 @@
             <span></span>
             <span></span>&nbsp;  INSURANCE</h1>
         <p style="color: whitesmoke;"></p>
-        <a class="btn" href="#" target="_blank" >ENQUIRY</a>
+        <!-- <a class="btn" href="#" target="_blank" >ENQUIRY</a> -->
     </div>
 </section>
 <div class="categories container">
@@ -85,6 +85,42 @@
         </div>
     </div>
 </section>
+
+
+
+<!-- Enquiry Form -->
+
+<div class="container">  
+    <form [formGroup]="EnquiryForm" (ngSubmit)="onSave()">
+      <h3>Enquiry Form</h3>
+      <h4>Contact us</h4>
+      <fieldset>
+        <input placeholder="Enter Name" type="text" tabindex="1" formControlName="e_name" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Enter Email Address" type="email" tabindex="2" formControlName="e_email"  required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Enter Contact Number" type="tel" tabindex="3" formControlName="e_contactNo"  required>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+      </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="testimonial">
