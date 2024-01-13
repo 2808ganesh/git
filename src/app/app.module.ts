@@ -13,6 +13,8 @@ import { AppLayoutComponent } from './includes/app-layout/app-layout.component';
 import { EmiCalculatorComponent } from './templates/emi-calculator/emi-calculator.component';
 import { AppHeaderComponent } from './includes/app-header/app-header.component';
 import { AppMenuComponent } from './includes/app-menu/app-menu.component';
+import { RegistrationComponent } from './templates/registration/registration.component';
+import { HomepageComponent } from './templates/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { AppMenuComponent } from './includes/app-menu/app-menu.component';
     AppLayoutComponent,
     EmiCalculatorComponent,
     AppHeaderComponent,
-    AppMenuComponent
+    AppMenuComponent,
+    RegistrationComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

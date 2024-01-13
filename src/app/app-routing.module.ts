@@ -7,15 +7,18 @@ import { ContactComponent } from './templates/contact/contact.component';
 import { LoginComponent } from './includes/login/login.component';
 import { AppLayoutComponent } from './includes/app-layout/app-layout.component';
 import { EmiCalculatorComponent } from './templates/emi-calculator/emi-calculator.component';
+import { HomepageComponent } from './templates/homepage/homepage.component';
+import { RegistrationComponent } from './templates/registration/registration.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'home',component:HomeComponent,children:[
-    {path:'',redirectTo:'about',pathMatch:'full'},
+    {path:'',redirectTo:'homepage',pathMatch:'full'},
+    {path:'homepage',component:HomepageComponent},
     {path:'about',component:AboutComponent},
     {path:'contact',component:ContactComponent},
     {path:'login',component:LoginComponent},
-    {path:'emiCalc',component:EmiCalculatorComponent}
+    {path:'register',component:RegistrationComponent}
 
   ]},
   {
